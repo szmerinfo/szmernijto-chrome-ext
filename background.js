@@ -10,9 +10,9 @@ chrome.webNavigation.onCompleted.addListener(function (details) {
           return false;
         }).then(data => {
           if (data) {
-            el_url.value = data.url;
-            el_title.value = data.title;
-            document.querySelector('[id^="comment-textarea-"]').value = data.description;
+            el_url.value = data.url ? data.url : previous_tab_data.url;
+            el_title.value = data.title ? data.title : previous_tab_data.title;
+            document.querySelector('[id^="comment-textarea-"]').value = data.description ? data.description : '';
           } else {
             el_url.value = previous_tab_data.url;
             el_title.value = previous_tab_data.title;
