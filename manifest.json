@@ -1,0 +1,34 @@
+{
+  "name": "Sz(me)rnijTo",
+  "description": "With this extension you can publish any URL on the lemmy instance - szmer.info!",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "scripting",
+    "webNavigation"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "/images/szmer16.png",
+      "32": "/images/szmer32.png",
+      "48": "/images/szmer48.png",
+      "128": "/images/szmer128.png"
+    }
+  },
+  "icons": {
+    "16": "/images/szmer16.png",
+    "32": "/images/szmer32.png",
+    "48": "/images/szmer48.png",
+    "128": "/images/szmer128.png"
+  }
+}

@@ -1,0 +1,20 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 140px;
+}
+button {
+  margin: 0;
+  padding: 10px 20px;
+  height: auto;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background: black;
+  color: red;
+}
+button:hover {
+  background: red;
+  color: black;
+}
