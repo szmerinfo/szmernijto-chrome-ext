@@ -15,10 +15,6 @@ chrome.webNavigation.onCompleted.addListener(function (details) {
             const el_title = document.getElementById('post-title');
             el_title.value = data && data.title ? data.title : previous_tab_data.title;
             el_title.dispatchEvent(new Event('input', { 'bubbles': true, 'cancelable': true }));
-  
-            const el_description = document.querySelector('[id^="comment-textarea-"]');
-            el_description.value = data && data.description ? data.description : '';
-            el_description.dispatchEvent(new Event('input', { 'bubbles': true, 'cancelable': true }));
             
             chrome.storage.sync.remove("previous_tab_data");
           });

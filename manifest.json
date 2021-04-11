@@ -1,7 +1,7 @@
 {
   "name": "Sz(me)rnijTo",
   "description": "With this extension you can publish any URL on the lemmy instance - szmer.info!",
-  "version": "1.1",
+  "version": "1.2",
   "manifest_version": 3,
   "minimum_chrome_version": "89",
   "background": {
